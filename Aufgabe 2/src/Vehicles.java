@@ -34,7 +34,27 @@ public class Vehicles {
             } else if (input.equals("p")) {
                 printAllVehicles();
             } else if (input.equals("s")) {
+                /*Test
+                ids.add(151);
+                ids.add(251);
+                ids.add(385486);
+                ids.add(4848);
+                ids.add(563);
+                ids.add(68);
+                names.add("dwa");
+                names.add("dawd");
+                names.add("fawfa");
+                names.add("fawofk");
+                names.add("omko");
+                names.add("ijio");
+                weights.add(2);
+                weights.add(8);
+                weights.add(3);
+                weights.add(15);
+                weights.add(10);
+                weights.add(1);*/
                 printAllVehiclesbyWeight();
+
             }
 
             System.out.println("Commands: q=quit, n=New Vehicle, p=print all Vehicles, s=Sort vehicles by weight");
@@ -60,36 +80,29 @@ public class Vehicles {
     }
 
     private static void printAllVehiclesbyWeight() {
-        ArrayList<Integer> nids = new ArrayList<>();
-        ArrayList<String> nnames = new ArrayList<>();
         ArrayList<Integer> nweights = new ArrayList<>();
 
         for (int i = 0; i < weights.size(); i++) {
-            nids.add(ids.get(i));
-            nnames.add(names.get(i));
             nweights.add(weights.get(i));
         }
-        for (int j = 0; j < nweights.size() - 1; j++) {
-            for (int i = 1; i < nweights.size()-j-1; i++) {
-                if (nweights.get(j) > nweights.get(i)) {
-
-                    int temp1 = nids.get(j);
-                    nids.set(j, nids.get(i));
-                    nids.set(i, temp1);
-
-                    String temp2 = nnames.get(j);
-                    nnames.set(j, nnames.get(i));
-                    nnames.set(i, temp2);
-
-                    int temp3 = nweights.get(j);
-                    nweights.set(j, nweights.get(i));
-                    nweights.set(i, temp3);
+        int temp;
+        for(int i=1; i<nweights.size(); i++) {
+            for(int j=0; j<nweights.size()-i; j++) {
+                if (nweights.get(j) > nweights.get(j + 1)) {
+                    temp = nweights.get(j);
+                    nweights.set(j, nweights.get(j + 1));
+                    nweights.set(j + 1, temp);
                 }
             }
-            for (int i = 0; i < nids.size(); i++) {
-                System.out.println(nids.get(i) + "," + nnames.get(i) + "," + nweights.get(i));
+        }
+        for(int i = 0; i<nweights.size();i++){
+            for(int j = 0;j<weights.size();j++){
+                if(nweights.get(i)==weights.get(j)){
+                    System.out.println(ids.get(j) + "," + names.get(j) + "," + weights.get(j));
+                    break;
+                }
+
             }
         }
-
     }
 }
