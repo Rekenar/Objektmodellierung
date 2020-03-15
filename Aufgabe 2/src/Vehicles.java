@@ -34,7 +34,7 @@ public class Vehicles {
             } else if (input.equals("p")) {
                 printAllVehicles();
             } else if (input.equals("s")) {
-                /*Test
+                /*
                 ids.add(151);
                 ids.add(251);
                 ids.add(385486);
@@ -101,7 +101,6 @@ public class Vehicles {
                     System.out.println(ids.get(j) + "," + names.get(j) + "," + weights.get(j));
                     break;
                 }
-
             }
         }
     }
