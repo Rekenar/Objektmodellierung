@@ -6,6 +6,8 @@ public class Workshop {
     private String street;
     private String phone;
 
+//Constructor for Workshop class
+
      public Workshop(String name, String country, String city, String street, String phone, int postcode){
         this.name = name;
         this.country = country;
@@ -14,6 +16,9 @@ public class Workshop {
         this.phone = phone;
         this.postcode = postcode;
     }
+
+//Getter for Workshop class
+
     public String getName() {
         return name;
     }
@@ -32,6 +37,8 @@ public class Workshop {
     public int getPostcode(){
          return postcode;
     }
+
+//Setter for Workshop class
 
     public void setName(String name) {
         this.name = name;

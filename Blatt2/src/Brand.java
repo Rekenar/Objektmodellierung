@@ -4,12 +4,16 @@ public class Brand {
     private String phone;
     private String email;
 
+//Constructor for Brand Class
+
     public Brand(String name, String country, String phone, String email){
         this.name = name;
         this.country = country;
         this.phone = phone;
         this.email = email;
     }
+
+//Getter for Brand class
 
     public String getName() {
         return name;
@@ -23,6 +27,9 @@ public class Brand {
     public String getEmail(){
         return email;
     }
+
+//Setter for Brand class
+
     public void setName(String name){
         this.name = name;
     }
@@ -36,9 +43,6 @@ public class Brand {
     }
 
     public void setPhone(String phone) {
-        if (phone.length()>3){
             this.phone = phone;
-        }
-
     }
 }

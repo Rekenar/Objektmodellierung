@@ -7,28 +7,24 @@ public class Main {
         ArrayList<Workshop> workshops = new ArrayList<>();
         workshops.add(autohaus);
         Vehicle car1 = new Vehicle("Fox",
-                                    1,
                                     1500,
                                     1000,
                                     180,
                                     workshops,
                                     new Brand("VW","Germany", "065481215","jvnajf@kndwidn.con"));
         Vehicle car2 = new Vehicle("Polo",
-                2,
                 1000,
                 1000,
                 180,
                 workshops,
                 new Brand("VW","Germany", "065481215","jvnajf@kndwidn.con"));
         Vehicle car3 = new Vehicle("A6",
-                3,
                 5000,
                 1000,
                 180,
                 workshops,
                 new Brand("Audi","Germany", "065481215","jvnajf@kndwidn.con"));
         Vehicle car4 = new Vehicle("Golf",
-                4,
                 3500,
                 1000,
                 180,
@@ -39,6 +35,8 @@ public class Main {
          test.addVehicle(car2);
          test.addVehicle(car3);
          test.addVehicle(car4);
-         test.printAllVehiclesbyWeight();
+         test.addVehicle("A4",655,454,150,workshops,
+                 new Brand("VW","Germany", "065481215","jvnajf@kndwidn.con"));
+         test.printAllVehiclesByWeight();
     }
 }
