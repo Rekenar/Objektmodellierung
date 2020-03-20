@@ -84,4 +84,18 @@ public void addVehicle(String name, int weight, int maxPermissableWeight,
             }
         }
     }
+    public void fillUpAllCars(double fuel){
+        for(Vehicle e:vehicles){
+            if(e instanceof Car){
+                ((Car) e).fillUp(fuel);
+            }
+        }
+    }
+    public void chargeAllElectricCars(double power, double hours){
+        for(Vehicle e:vehicles){
+            if(e instanceof ElectricCar){
+                ((ElectricCar) e).charge(power,hours);
+            }
+        }
+    }
 }
