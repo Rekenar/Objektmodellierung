@@ -67,6 +67,7 @@ public void addVehicle(String name, int weight, int maxPermissableWeight,
         SortedByWeight sorted = new SortedByWeight();
         //Giving the Collections.sort method our vehicles ArrayList and our object sorted of the SortedByWeight class
         //The Sort method invokes the compare method to sort the Objects in the List.
+        //sorted sets the condition for sorting
         Collections.sort(vehicles,sorted);
         for(Vehicle e:vehicles){
             e.printInfo();

@@ -11,7 +11,15 @@ private int maxPermissableWeight;
 private double speed;
 private double maxSpeed;
 
-//Constructor for Vehicle Class
+    /**
+     * Vehicle Constructor
+     * @param name
+     * @param weight
+     * @param maxPermissableWeight
+     * @param maxSpeed
+     * @param workshops
+     * @param brand
+     */
 
     public Vehicle(String name, int weight, int maxPermissableWeight,
              double maxSpeed, ArrayList<Workshop> workshops, Brand brand){
@@ -25,7 +33,10 @@ private double maxSpeed;
         this.brand = brand;
     }
 
-//Getter for Vehicle Class
+    /**
+     * Getter
+     * @return
+     */
 
     public int getId() {
         return id;
@@ -57,7 +68,9 @@ private double maxSpeed;
         return maxSpeed;
     }
 
-//Setter for Vehicle Class
+    /**
+     * Setter
+     */
 
     public void setName(String name) {
         this.name = name;
