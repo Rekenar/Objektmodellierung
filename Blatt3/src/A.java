@@ -1,5 +1,5 @@
 public class A {
-    public static int answer = 0;
+    public int answer = 0;
     public static String getClassName() {
         return "Name of class: A";
     }
