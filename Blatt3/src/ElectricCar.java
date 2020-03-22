@@ -66,6 +66,7 @@ public class ElectricCar extends Vehicle {
             setBatteryLevel(getBatteryLevel() + powerPerhour);
         }
     }
+    @Override
     /**
      * Method drive(int kilometers)
      *
@@ -79,7 +80,12 @@ public class ElectricCar extends Vehicle {
             setBatteryLevel(getBatteryLevel()-getPowerConsumption());
         }
     }
-
+    @Override
+    /**
+     * Method brake()
+     * If this.speed is greater than zero add 0.001 to the batteryLevel.
+     * @return
+     */
     public double brake(){
         if(getSpeed()>0){
             setBatteryLevel(getBatteryLevel()+0.001);
@@ -87,7 +93,11 @@ public class ElectricCar extends Vehicle {
         }
         return getBatteryLevel();
     }
-
+    @Override
+    /**
+     * Method printInfo()
+     * Overrides method from superclass and additionally gives Info about the charge.
+     */
     public void printInfo(){
         System.out.println("Standard information:");
         System.out.println("ID:" + getId() + ", Name:" + getName() + ", Weight:" + getWeight() + ", MaxPermissableWeight: "

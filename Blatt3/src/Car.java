@@ -67,7 +67,7 @@ public class Car extends Vehicle {
             setFuel(getFuel() + fuel);
         }
     }
-
+    @Override
     /**
      * Method drive()
      * Overrides the drive() Method from Vehicle.
@@ -99,6 +99,7 @@ public class Car extends Vehicle {
         double scale = Math.pow(10, places);
         return Math.round(value * scale) / scale;
     }
+    @Override
     /**
      * Method printInfo()
      * Overrides the printInfo() Method from Vehicle.

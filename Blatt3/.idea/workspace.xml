@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5f8de11-ed3b-40b7-afe9-c2869f76adf4" name="Default Changelist" comment="" />
+    <list default="true" id="d5f8de11-ed3b-40b7-afe9-c2869f76adf4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blatt3/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blatt3/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blatt3/ElectricCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blatt3/ElectricCar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blatt3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blatt3/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blatt3/SortedByWeight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blatt3/SortedByWeight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Blatt3/VehicleAdministration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Blatt3/VehicleAdministration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ElectricCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElectricCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SortedByWeight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SortedByWeight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VehicleAdministration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VehicleAdministration.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +26,38 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+            <state relative-caret-position="714">
+              <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/A.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#91#92#0" expanded="true" />
+                <element signature="e#132#133#0" expanded="true" />
+                <element signature="e#165#166#0" expanded="true" />
+                <element signature="e#208#209#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/B.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+              <folding>
+                <element signature="e#102#103#0" expanded="true" />
+                <element signature="e#143#144#0" expanded="true" />
+                <element signature="e#190#191#0" expanded="true" />
+                <element signature="e#233#234#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -23,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Car.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="119" column="66" selection-start-line="119" selection-start-column="66" selection-end-line="119" selection-end-column="66" />
+            <state relative-caret-position="867">
+              <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
               <folding>
                 <element signature="method#setFuel#0;class#Car#0" />
                 <element signature="method#setMaxFuel#0;class#Car#0" />
@@ -37,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ElectricCar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="93" column="23" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
+            <state relative-caret-position="-523">
+              <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
               <folding>
                 <element signature="method#setBatteryLevel#0;class#ElectricCar#0" />
                 <element signature="method#setMaxBatteryCapacity#0;class#ElectricCar#0" />
@@ -51,7 +93,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Vehicle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
+            <state relative-caret-position="2159">
               <caret line="147" selection-start-line="147" selection-end-line="147" />
             </state>
           </provider>
@@ -60,8 +102,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/VehicleAdministration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1462">
-              <caret line="89" column="27" selection-start-line="89" selection-start-column="27" selection-end-line="89" selection-end-column="27" />
+            <state relative-caret-position="952">
+              <caret line="105" column="119" selection-start-line="105" selection-start-column="119" selection-end-line="105" selection-end-column="119" />
+              <folding>
+                <element signature="method#addVehicle#0;class#VehicleAdministration#0" />
+                <element signature="method#addVehicle#1;class#VehicleAdministration#0" />
+                <element signature="method#removeVehicle#0;class#VehicleAdministration#0" />
+                <element signature="method#search#0;class#VehicleAdministration#0" />
+                <element signature="method#printAllVehicles#0;class#VehicleAdministration#0" />
+                <element signature="method#printAllVehiclesByWeight#0;class#VehicleAdministration#0" />
+                <element signature="method#search#1;class#VehicleAdministration#0" />
+                <element signature="method#chargeAllElectricCars#0;class#VehicleAdministration#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SortedByWeight.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="272">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -99,10 +151,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/Exercise5.java" />
+        <option value="$PROJECT_DIR$/src/SortedByWeight.java" />
         <option value="$PROJECT_DIR$/src/ElectricCar.java" />
         <option value="$PROJECT_DIR$/src/Car.java" />
         <option value="$PROJECT_DIR$/src/VehicleAdministration.java" />
-        <option value="$PROJECT_DIR$/src/Exercise5.java" />
+        <option value="$PROJECT_DIR$/src/B.java" />
+        <option value="$PROJECT_DIR$/src/A.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
@@ -141,7 +196,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584724558189" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584869440023" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -182,12 +237,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584707678803</updated>
-      <workItem from="1584707683354" duration="7904000" />
+      <workItem from="1584707683354" duration="10252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7904000" />
+    <option name="totallyTimeSpent" value="10252000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -266,13 +321,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SortedByWeight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Brand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -304,10 +352,38 @@
         <state relative-caret-position="-1870" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exercise5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/Comparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6048">
+          <caret line="149" column="8" selection-start-line="149" selection-start-column="8" selection-end-line="149" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SortedByWeight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vehicle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2159">
+          <caret line="147" selection-start-line="147" selection-end-line="147" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Car.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="119" column="66" selection-start-line="119" selection-start-column="66" selection-end-line="119" selection-end-column="66" />
+        <state relative-caret-position="867">
+          <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
           <folding>
             <element signature="method#setFuel#0;class#Car#0" />
             <element signature="method#setMaxFuel#0;class#Car#0" />
@@ -316,31 +392,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Vehicle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="147" selection-start-line="147" selection-end-line="147" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/VehicleAdministration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="89" column="27" selection-start-line="89" selection-start-column="27" selection-end-line="89" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exercise5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Blatt3.iml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ElectricCar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="93" column="23" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
+        <state relative-caret-position="-523">
+          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
           <folding>
             <element signature="method#setBatteryLevel#0;class#ElectricCar#0" />
             <element signature="method#setMaxBatteryCapacity#0;class#ElectricCar#0" />
@@ -349,10 +407,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/VehicleAdministration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="105" column="119" selection-start-line="105" selection-start-column="119" selection-end-line="105" selection-end-column="119" />
+          <folding>
+            <element signature="method#addVehicle#0;class#VehicleAdministration#0" />
+            <element signature="method#addVehicle#1;class#VehicleAdministration#0" />
+            <element signature="method#removeVehicle#0;class#VehicleAdministration#0" />
+            <element signature="method#search#0;class#VehicleAdministration#0" />
+            <element signature="method#printAllVehicles#0;class#VehicleAdministration#0" />
+            <element signature="method#printAllVehiclesByWeight#0;class#VehicleAdministration#0" />
+            <element signature="method#search#1;class#VehicleAdministration#0" />
+            <element signature="method#chargeAllElectricCars#0;class#VehicleAdministration#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/A.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#91#92#0" expanded="true" />
+            <element signature="e#132#133#0" expanded="true" />
+            <element signature="e#165#166#0" expanded="true" />
+            <element signature="e#208#209#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/B.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="e#102#103#0" expanded="true" />
+            <element signature="e#143#144#0" expanded="true" />
+            <element signature="e#190#191#0" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        <state relative-caret-position="714">
+          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
         </state>
       </provider>
     </entry>

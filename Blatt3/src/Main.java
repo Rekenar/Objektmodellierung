@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Main {
+/*public class Main {
     public static void main(String[] args) {
         Workshop autohaus = new Workshop("Eisner","austria",
                 "Klagenfurt","Bakerstreet 9","066481561", 8484);
@@ -24,35 +24,20 @@ public class Main {
 
 
     }
-}
-/*public class A {
-    public static int answer = 0;
-    public static String getClassName() {
-        return "Name of class: A";
-    }
-    public String callMethod() {
-        return "Method of class: A";
-    }
-}
-public class B extends A {
-    public static int answer = 42;
-    public static String getClassName() {
-        return "Name of class: B";
-    }
-    @Override
-    public String callMethod() {
-        return "Method of class: B";
-    }
-}
+}*/
 public class Main {
     public static void main(String args[]) {
-        B b1 = new B();
-        System.out.println(b1.answer);
-        System.out.println(b1.getClassName());
-        System.out.println(b1.callMethod());
-        A b2 = new B();
-        System.out.println(b2.answer);
-        System.out.println(b2.getClassName());
-        System.out.println(b2.callMethod());
+        B b1 = new B();                             //Normal Object
+        System.out.println(b1.answer);              //42                        //42
+        System.out.println(b1.getClassName());      //Name of class: B          //B
+        System.out.println(b1.callMethod());        //Method of class: B        //B
+
+
+        A b2 = new B();                             //An Object of the Type A gets initialized with new B()
+                                                    //This means the static attributes and methods are from the
+                                                    // A class and the other attributes and methods are from the B class
+        System.out.println(b2.answer);              //0                         //0     //It gives back 0 because answer is a static attribute
+        System.out.println(b2.getClassName());      //Name of class: A          //A     //It gives back A because getClassName is a static Method
+        System.out.println(b2.callMethod());        //Method of class: A        //B     //It gives back B because its the override method from B that's non-static
     }
-}*/
+}

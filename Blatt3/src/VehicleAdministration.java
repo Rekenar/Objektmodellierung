@@ -4,13 +4,18 @@ import java.util.Collections;
 public class VehicleAdministration {
     private ArrayList<Vehicle> vehicles;
 
-//Initialize an empty ArrayList
+    /**
+     * Initialize an empty ArrayList
+     */
 
     public VehicleAdministration(){
         this.vehicles = new ArrayList<>();
     }
 
-//Add a Vehicle in the ArrayList but when the Id is used don't add it
+    /**
+     * Add a Vehicle in the ArrayList but when the Id is used don't add it
+     * @param vehicle
+     */
 
     public void addVehicle(Vehicle vehicle){
         try{
@@ -25,14 +30,18 @@ public class VehicleAdministration {
         }
     }
 
-//Add a Vehicle in the ArrayList but initialize the object while adding
+    /**
+     * Add a Vehicle in the ArrayList but initialize the object while adding
+     */
 
 public void addVehicle(String name, int weight, int maxPermissableWeight,
                        double maxSpeed, ArrayList<Workshop> workshops, Brand brand){
         vehicles.add(new Vehicle(name, weight, maxPermissableWeight,maxSpeed,workshops,brand));
 }
-
-//Remove a Vehicle if its in the List
+    /**
+     * Remove a Vehicle if its in the List
+     * @param vehicleId
+     */
 
     public void removeVehicle(int vehicleId){
         for(int i = 0; i<vehicles.size();i++){
@@ -41,8 +50,10 @@ public void addVehicle(String name, int weight, int maxPermissableWeight,
             }
         }
     }
-
-//Search for a Vehicle via the Id and give back the Information
+    /**
+     * Search for a Vehicle via the Id and give back the Information
+     * @param vehicleId
+     */
 
     public void search(int vehicleId){
         for(int i = 0; i<vehicles.size();i++){
@@ -51,8 +62,9 @@ public void addVehicle(String name, int weight, int maxPermissableWeight,
             }
         }
     }
-
-//Print the Information from all Vehicles
+    /**
+     * Print the Information from all Vehicles
+     */
 
     public void printAllVehicles(){
         for(Vehicle e: vehicles){
@@ -60,8 +72,9 @@ public void addVehicle(String name, int weight, int maxPermissableWeight,
         }
     }
 
-//Print the Information from all Vehicles sorted by weight
-
+    /**
+     * Print the Information from all Vehicles sorted by weight
+     */
     public void printAllVehiclesByWeight(){
         //Create an Object of the sorted by weight class
         SortedByWeight sorted = new SortedByWeight();
@@ -74,7 +87,9 @@ public void addVehicle(String name, int weight, int maxPermissableWeight,
         }
     }
 
-//Search for a similar brandName and print the Vehicle
+    /**
+     * Search for an equal brandName and print the Vehicle
+     */
 
     public void search(String brandName){
         for(Vehicle e:vehicles){
@@ -84,6 +99,13 @@ public void addVehicle(String name, int weight, int maxPermissableWeight,
             }
         }
     }
+
+    /**
+     * Method fillUpAllCars(double fuel)
+     * Every Car in vehicles gets a fill up.
+     * We need the Typecast to Car because without it it wouldn't be able to differ between the super- and the subclass
+     * @param fuel
+     */
     public void fillUpAllCars(double fuel){
         for(Vehicle e:vehicles){
             if(e instanceof Car){
@@ -91,6 +113,14 @@ public void addVehicle(String name, int weight, int maxPermissableWeight,
             }
         }
     }
+
+    /**
+     * Method chargeAllElectricCars(double power, double hours)
+     * Every ElectricCar in vehicles gets a charge.
+     * We need the Typecast to ElectricCar because without it it wouldn't be able to differ between the super- and the subclass
+     * @param power
+     * @param hours
+     */
     public void chargeAllElectricCars(double power, double hours){
         for(Vehicle e:vehicles){
             if(e instanceof ElectricCar){
