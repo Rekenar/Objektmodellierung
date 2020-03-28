@@ -98,21 +98,20 @@ public class ElectricCar extends Vehicle {
      * Method printInfo()
      * Overrides method from superclass and additionally gives Info about the charge.
      */
-    public void printInfo(){
+    public void printInfo() {
         System.out.println("Standard information:");
         System.out.println("ID:" + getId() + ", Name:" + getName() + ", Weight:" + getWeight() + ", MaxPermissableWeight: "
                 + getMaxPermissableWeight() + ", Speed: " + getSpeed() + ", MaxSpeed: " + getMaxSpeed() + ", Battery: " + getBatteryLevel()
                 + ", MaxBatteryCapacity: " + getMaxBatteryCapacity() + ", PowerConsumption: " + getPowerConsumption());
 
         System.out.println("Brand:");
-        System.out.println("Name: "+ getBrand().getName() + ", Country: " + getBrand().getCountry()
+        System.out.println("Name: " + getBrand().getName() + ", Country: " + getBrand().getCountry()
                 + ", EMail: " + getBrand().getEmail() + ", Phone: " + getBrand().getPhone());
 
         System.out.println("Workshops:");
-        for(Workshop i:getWorkshops()){
-            System.out.println("Name: " +i.getName() + ", Country: " + i.getCountry() + ", City: " + i.getCity()
-                    + ", Postcode: " + i.getPostcode()+ ", Street: " +i.getStreet() + ", Phone: " + i.getPhone());
+        for (Workshop i : getWorkshops()) {
+            System.out.println("Name: " + i.getName() + ", Country: " + i.getCountry() + ", City: " + i.getCity()
+                    + ", Postcode: " + i.getPostcode() + ", Street: " + i.getStreet() + ", Phone: " + i.getPhone());
         }
     }
-
 }

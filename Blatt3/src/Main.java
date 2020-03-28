@@ -15,16 +15,12 @@ public class Main {
                 50.0, 5.0);
         VehicleAdministration vehicles = new VehicleAdministration();
         vehicles.addVehicle(car4);
-        vehicles.fillUpAllCars(50);
-        car4.drive(800);
+        vehicles.fillUpAllCars(10);
+        car4.drive(300);
         car4.printInfo();
-
-
-
-
-
     }
 }
+
 /*
 public class Main {
     public static void main(String args[]) {
@@ -37,9 +33,9 @@ public class Main {
         A b2 = new B();                             //An Object of the Type A gets initialized with new B()
                                                     //This means the static attributes and methods are from the
                                                     // A class and the override methods are from the B class
-        System.out.println(b2.answer);              //0                         //0     //It gives back 0 because answer is a static attribute
-        System.out.println(b2.getClassName());      //Name of class: A          //A     //It gives back A because getClassName is a static Method
-        System.out.println(b2.callMethod());        //Method of class: A        //B     //It gives back B because its the override method from B that's non-static
+        System.out.println(b2.answer);              //0                         //0     //It gives back 0 because we cast to A
+        System.out.println(b2.getClassName());      //Name of class: A          //A     //It gives back A because we cast to A and its a static method
+        System.out.println(b2.callMethod());        //Method of class: A        //B     //It gives back B because its the override method from B
     }
 }
 */
