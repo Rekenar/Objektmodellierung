@@ -1,0 +1,35 @@
+1. Was ist Mehrfachvererbung? Erklären Sie das Konzept anhand eines Beispiels.
+
+    You inherit from more than one class or interface. It is only possible with interfaces because with classes
+    (when there's a method that's implemented in more than one class) the subclass cant know which to implement.
+
+2. Warum gibt es in Java keine Mehrfachvererbung für Klassen?
+
+    The problem with multiple inheritance is that two classes may define different ways of doing the same thing
+    , and the subclass can't choose which one to pick.
+
+3. Was ist ein Interface? Was ist der Unterschied zu einer Klasse?
+
+    An Interface just gives the structure of what the class has to look like.
+
+4. Was ist der Final - Modifier (in Bezug auf Klassen, Variablen und Methoden)?
+
+    With the final modifier you cant edit these classes variables and methods.
+
+5. Wann sollten abstrakte Klassen oder Interfaces verwendet werden?
+
+    Abstract classes should be used when you want to share the implementation with other classes.
+
+6. Wie kann Mehrfachvererbung in Java erreicht werden? Geben Sie ein Beispiel.
+
+    multiple inheritance can be achieved via Interfaces.
+
+7. Was ist der Unterschied zwischen totaler Abstraktion und partieller Abstraktion?
+
+    total abstraction means that all the methods are empty and field variables are public static and final by default.
+    partial abstraction means that not all the methods are empty.
+
+
+
+
+

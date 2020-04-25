@@ -29,7 +29,7 @@ public abstract class Hero extends Entity {
      */
     public void levelUp(){
         setLevel(++level);
-        setMaxhp(getMaxhp() + Entity.diceRoll(4));
+        setMaxhp(getMaxhp() + Entity.diceRoll(5));
         setHp(getMaxhp());
     }
 }

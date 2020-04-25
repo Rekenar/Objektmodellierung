@@ -3,9 +3,9 @@ import java.util.Collections;
 import java.util.Scanner;
 
 public class BattleSimulator {
-/**
- * Declaration of ArrayLists
- */
+    /**
+     * Declaration of ArrayLists
+     */
     static ArrayList<Hero> heroes;
     static ArrayList<Monster> monsters;
     static ArrayList<Entity> entities;
@@ -14,12 +14,11 @@ public class BattleSimulator {
      * main-Method
      * You can decide whether you like it all random or if you would like the heroes first.
      * You can also decide how many rounds they shall play.
-     *
      * @param args
      */
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        boolean temp = false;
+        boolean temp;
         do {
             System.out.println("Which gamemode would you like to play?");
             System.out.println("1: All random or 2: First heroes than monsters");
@@ -31,19 +30,21 @@ public class BattleSimulator {
             System.out.println("-----------------------------------------------------");
             int rounds = in.nextInt();
 
-            initzializeBattleLists();
-            listParticipantsFirstHeroes();
             System.out.println("");
 
             switch (gamemode) {
                 case 1:
                     temp = false;
+                    initzializeBattleLists();
+                    listParticipantsAllRandom();
                     for (int i = 0; i < rounds; i++) {
                         battleRoundAllRandom();
                     }
                     break;
                 case 2:
                     temp = false;
+                    initzializeBattleLists();
+                    listParticipantsFirstHeroes();
                     for (int i = 0; i < rounds; i++) {
                         battleRoundFirstHeroes();
                     }

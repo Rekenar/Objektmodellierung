@@ -58,7 +58,7 @@ public abstract class Entity {
      * @return
      */
     public static int diceRoll(int sides){
-        int i = rnd.nextInt(sides);
+        int i = rnd.nextInt(++sides);
         return (i==0) ? 1:i;
     }
 

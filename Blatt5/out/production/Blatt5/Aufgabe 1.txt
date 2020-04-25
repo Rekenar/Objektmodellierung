@@ -1,0 +1,48 @@
+1. Was ist Mehrfachvererbung? Erklären Sie das Konzept anhand eines Beispiels.
+
+
+
+
+
+2. Warum gibt es in Java keine Mehrfachvererbung für Klassen?
+
+
+
+
+
+3. Was ist ein Interface? Was ist der Unterschied zu einer Klasse?
+
+
+
+
+
+
+4. Was ist der Final - Modifier (in Bezug auf Klassen, Variablen und Methoden)?
+
+
+
+
+
+
+5. Wann sollten abstrakte Klassen oder Interfaces verwendet werden?
+
+
+
+
+
+
+6. Wie kann Mehrfachvererbung in Java erreicht werden? Geben Sie ein Beispiel.
+
+
+
+
+
+
+7. Was ist der Unterschied zwischen totaler Abstraktion und partieller Abstraktion?
+
+
+
+
+
+
+
