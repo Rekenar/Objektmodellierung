@@ -1,0 +1,10 @@
+1. Was ermöglichen als default gekennzeichnete Methoden in Interfaces?
+
+If you have a finished program but need to add another method or so you can just implement it into the Interface with the default keyword.
+So you dont have to change every class that inherits from that Interface.
+
+
+2. Welche Konflikte können durch default – Methoden bei Mehrfachvererbung
+ entstehen? Wie können diese Konflikte aufgelöst werden?
+
+ There are the same conflicts as with normal classes because different Interfaces could implement the same method.
