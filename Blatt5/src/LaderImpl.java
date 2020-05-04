@@ -94,15 +94,4 @@ public class LaderImpl extends BaumaschineImpl implements Lader {
     Gewicht = gewicht;
     }
 
-
-    @Override
-    public void druckeBeschreibung() {
-        System.out.println("-----------------------------------------------------------");
-        System.out.println("Name = " + getName());
-        System.out.println("Kipphoehe = " + getKipphoehe());
-        System.out.println("Schaufelvolumen = " + getSchaufelvolumen());
-        System.out.println("Leistung = " + getLeistung());
-        System.out.println("Geschwindigkeit = " + getGeschwindigkeit());
-        System.out.println("Gewicht = " + getGewicht());
-    }
 }

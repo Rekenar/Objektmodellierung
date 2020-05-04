@@ -7,5 +7,7 @@ public interface Baumaschine {
     void setGeschwindigkeit(double geschwindigkeit);
     double getGewicht();
     void setGewicht(double gewicht);
-    void druckeBeschreibung();
+    default void druckeBeschreibung(){
+
+    }
 }

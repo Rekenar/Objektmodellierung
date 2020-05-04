@@ -26,10 +26,5 @@
 
 7. Was ist der Unterschied zwischen totaler Abstraktion und partieller Abstraktion?
 
-    total abstraction means that all the methods are empty and field variables are public static and final by default.
+    total abstraction means that all the methods are empty.
     partial abstraction means that not all the methods are empty.
-
-
-
-
-

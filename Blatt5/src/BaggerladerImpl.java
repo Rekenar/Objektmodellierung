@@ -63,10 +63,4 @@ public class BaggerladerImpl extends BaggerImpl implements Baggerlader {
         }
     }
 
-    @Override
-    public void druckeBeschreibung(){
-        super.druckeBeschreibung();
-        System.out.println("Schaufelvolumen = " + getSchaufelvolumen());
-        System.out.println("Kipphoehe = " + getKipphoehe());
-    }
 }

@@ -5,5 +5,14 @@ public interface Bagger extends Baumaschine {
     void setGrabtiefe(double grabtiefe);
     double getReichweite();
     void setReichweite(double reichweite);
-    void druckeBeschreibung();
+    @Override
+    default void druckeBeschreibung(){
+        System.out.println("-----------------------------------------------------------");
+        System.out.println("Grabtiefe = " + getGrabtiefe());
+        System.out.println("Reichweite = " + getReichweite());
+        System.out.println("Name = " + getName());
+        System.out.println("Leistung = " + getLeistung());
+        System.out.println("Geschwindigkeit = " + getGeschwindigkeit());
+        System.out.println("Gewicht = " + getGewicht());
+    }
 }

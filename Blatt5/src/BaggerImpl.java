@@ -95,14 +95,4 @@ public class BaggerImpl extends BaumaschineImpl implements Bagger{
     }
 
 
-    @Override
-    public void druckeBeschreibung() {
-        System.out.println("-----------------------------------------------------------");
-        System.out.println("Name = " + getName());
-        System.out.println("Grabtiefe = " + getGrabtiefe());
-        System.out.println("Reichweite = " + getReichweite());
-        System.out.println("Leistung = " + getLeistung());
-        System.out.println("Geschwindigkeit = " + getGeschwindigkeit());
-        System.out.println("Gewicht = " + getGewicht());
-    }
 }
