@@ -1,0 +1,28 @@
+1)
+Design Patterns are well-proved solutions for specific problems.
+
+Advantage of design patterns
+They are reusable in multiple projects.
+They provide the solutions that help to define the system architecture.
+They provide transparency to the design of an application.
+
+
+2)
+1.Creational Design Patterns
+
+Factory Method:
+The superclasses create the object but the subclasses decide which one to initiate.
+
+
+2. Structural Design Pattern
+
+Adapter:
+An adapter wraps one of the objects to hide the complexity of conversion happening behind the scenes.
+The wrapped object isn’t even aware of the adapter.
+
+
+3. Behavioral Design Pattern
+
+Chain of Responsibility:
+Chain of Responsibility is a behavioral design pattern that lets you pass requests along a chain of handlers.
+Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
