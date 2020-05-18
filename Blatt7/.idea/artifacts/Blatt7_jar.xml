@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact name="Blatt7:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Blatt7_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Blatt7.jar">
+        <element id="module-output" name="Blatt7" />
+      </element>
+      <element id="library" level="project" name="SmarthomeLib" />
+    </root>
+  </artifact>
+</component>

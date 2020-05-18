@@ -8,7 +8,7 @@ import at.omi.smarthome.interfaces.Device;
 import at.omi.smarthome.simulation1.SimulatedLight1;
 import at.omi.smarthome.simulation2.SimulatedLight2;
 
-public class Main {
+public class MainLight {
 	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable(){

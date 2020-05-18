@@ -1,7 +1,7 @@
 package Aufgabe4;
 import java.util.ArrayList;
 
-public class Main {
+public class MainVehicle {
     public static void main(String[] args) {
         Workshop autohaus = new Workshop("Eisner","austria",
                 "Klagenfurt","Bakerstreet 9","066481561", 8484);
@@ -31,6 +31,7 @@ public class Main {
                 180,
                 workshops,
                 new Brand("VW","Germany", "065481215","jvnajf@kndwidn.con"));
+
          VehicleAdministration test = VehicleAdministration.getInstance();
          test.addVehicle(car1);
          test.addVehicle(car2);

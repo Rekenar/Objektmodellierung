@@ -1,5 +1,6 @@
 package Aufgabe2;
 public class BaggerladerImpl extends BaggerImpl implements Baggerlader {
+
 	public BaggerladerImpl(String name, int leistung, double geschwindigkeit, double gewicht, double grabtiefe, double reichweite, double schaufelvolumen, double kipphohe) {
 		super(name, leistung, geschwindigkeit, gewicht, grabtiefe, reichweite);
 		setSchaufelvolumen(schaufelvolumen);
@@ -54,7 +55,7 @@ public class BaggerladerImpl extends BaggerImpl implements Baggerlader {
 	}
 	/*
 	@Override
-	public void druckeBeschreibung() {      //Argh still not necessary
+	public void druckeBeschreibung() {
 		System.out.println(toString());
 	}
 
