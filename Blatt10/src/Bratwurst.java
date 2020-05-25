@@ -1,13 +1,11 @@
 public class Bratwurst extends Gericht {
 
 	public double berechneKosten() {
-		// TODO - implement Bratwurst.berechneKosten
-		throw new UnsupportedOperationException();
+		return 5.00;
 	}
 
 	public Bratwurst() {
-		// TODO - implement Bratwurst.Bratwurst
-		throw new UnsupportedOperationException();
+
 	}
 
 }

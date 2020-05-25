@@ -7,8 +7,7 @@ public abstract class ExtrasDecorator extends Gericht {
 	 * @param gericht
 	 */
 	public ExtrasDecorator(Gericht gericht) {
-		// TODO - implement ExtrasDecorator.ExtrasDecorator
-		throw new UnsupportedOperationException();
+		this.gericht = gericht;
 	}
 
 	public abstract void druckeBeschreibung();

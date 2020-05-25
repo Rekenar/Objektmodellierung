@@ -1,13 +1,10 @@
 public class Burger extends Gericht {
 
 	public double berechneKosten() {
-		// TODO - implement Burger.berechneKosten
-		throw new UnsupportedOperationException();
+		return 6.00;
 	}
 
 	public Burger() {
-		// TODO - implement Burger.Burger
-		throw new UnsupportedOperationException();
-	}
 
+	}
 }

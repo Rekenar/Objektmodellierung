@@ -5,18 +5,17 @@ public class Senf extends ExtrasDecorator {
 	 * @param gericht
 	 */
 	public Senf(Gericht gericht) {
-		// TODO - implement Senf.Senf
-		throw new UnsupportedOperationException();
+		super(gericht);
+
 	}
 
 	public void druckeBeschreibung() {
-		// TODO - implement Senf.druckeBeschreibung
-		throw new UnsupportedOperationException();
+		System.out.println("mit Senf");
 	}
 
 	public double berechneKosten() {
-		// TODO - implement Senf.berechneKosten
-		throw new UnsupportedOperationException();
+		return gericht.berechneKosten() + 0.20;
+
 	}
 
 }

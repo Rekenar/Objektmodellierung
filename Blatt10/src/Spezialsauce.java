@@ -5,18 +5,17 @@ public class Spezialsauce extends ExtrasDecorator {
 	 * @param gericht
 	 */
 	public Spezialsauce(Gericht gericht) {
-		// TODO - implement Spezialsauce.Spezialsauce
-		throw new UnsupportedOperationException();
+		super(gericht);
+
 	}
 
 	public void druckeBeschreibung() {
-		// TODO - implement Spezialsauce.druckeBeschreibung
-		throw new UnsupportedOperationException();
+		System.out.println("mit Spezialsauce");
 	}
 
 	public double berechneKosten() {
-		// TODO - implement Spezialsauce.berechneKosten
-		throw new UnsupportedOperationException();
+		return gericht.berechneKosten() + 0.70;
+
 	}
 
 }

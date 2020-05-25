@@ -5,18 +5,15 @@ public class Krautsalat extends ExtrasDecorator {
 	 * @param gericht
 	 */
 	public Krautsalat(Gericht gericht) {
-		// TODO - implement Krautsalat.Krautsalat
-		throw new UnsupportedOperationException();
+		super(gericht);
 	}
 
 	public void druckeBeschreibung() {
-		// TODO - implement Krautsalat.druckeBeschreibung
-		throw new UnsupportedOperationException();
+		System.out.println("mit Krautsalat");
 	}
 
 	public double berechneKosten() {
-		// TODO - implement Krautsalat.berechneKosten
-		throw new UnsupportedOperationException();
+		return gericht.berechneKosten() + 1.00;
 	}
 
 }
