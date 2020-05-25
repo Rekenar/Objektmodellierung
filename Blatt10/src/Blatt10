@@ -1,0 +1,27 @@
+Aufgabe1.1
+
+•	Funktioniert diese Lösung grundsätzlich?
+
+        Yes it would work but its just to complicated too implement.
+
+•	Welche Nachteile könnten bei dieser Lösung insbesondere in Hinblick auf spätere Wartbarkeit und Erweiterbarkeit der Implementierung entstehen?
+
+        When you want to add a new meal you need to implement a subclass for every extra that is available.
+
+
+Aufgabe 1.2
+
+Welche Vorteile bringt diese Lösung gegenüber der ersten Lösung?
+
+    Überlegen Sie sich in Hinblick auf die Wartbarkeit und die Erweiterbarkeit des Designs unter anderem folgende Punkte:
+
+        •	Was passiert, wenn neue Gerichte bzw. Extras hinzukommen (z.B. eine Palatschinke mit dem Extra Schokosauce)?
+
+                Every new meal has access to all extras and every old meal has access to every new extra.
+
+        •	Was passiert, wenn ein Kunde zwei Gurken und extra viel Senf zu seiner Bratwurst haben möchte?
+
+                You would need to make a loop and ask how many of each extra the customer would like.
+
+
+

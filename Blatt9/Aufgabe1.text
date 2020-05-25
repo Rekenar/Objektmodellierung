@@ -1,0 +1,104 @@
+Aufgabe 1
+
+1. Was ist Modellieren und was ist ein Modell?
+
+	A model is a represantation of a particular phenomena in the world.
+
+
+2. Was ist ein Diagramm?
+
+	A diagram is a symbolic representation of information using visualization techniques.
+
+3. Was ist eine Modellierungssprache?
+
+	A modeling language is any artificial language that can be used to express information or 
+	knowledge or systems in a structure that is defined by a consistent set of rules. 
+	The rules are used for interpretation of the meaning of components in the structure.
+
+4. Warum trägt UML (Unified Modeling Language) den Begriff „Unified“?
+
+   It supports the whole development process.
+   Flexibility in Procedural models.
+   Independent.
+
+
+5. Welche Aspekte (Sichten auf die Sachverhalte) bietet UML an?
+
+Static Aspects
+	-describe structures, which are valid over the whole life span.
+
+Dynamic aspects
+	-describe the change over time
+
+Software-organizational aspects
+	-describe the breakdown of the models
+
+6. Welche Modelle betreffen welche Aspekte?
+
+	Static Aspects are for the quantity of the same objects and is defined by attributes, operations and relations to other classes.
+
+	Dynamic Aspects is a self-contained pro-active behavior and is defined by actions, control and data flow as well any responsibilities.
+
+	Software-organizational aspects are compound objects where their inner structure/implementation is strongly capsuled.
+
+7. Erklären Sie die 4 Ebenen der Modellierung (M3, M2, M1, M0). Auf welcher Ebene
+befindet man sich als Modellierer von Anwendungssystemen?
+
+	M3 Meta Object Facility		
+	
+		Abstract level to define M2 level
+		
+	M2 UML Metamodel e.g Class, Interface
+	
+		Defining how the model is built up and structured
+	
+	M1 Model 
+	
+		Concrete classes.
+		
+	M0 
+		
+		Objects.
+
+8. Erklären Sie in Bezug auf UML-Klassendiagramme folgende Begriffe:
+ Attribut, Operation, Multiplizitäten
+	attributs:
+		
+		attributs are the variables of the class.
+		
+	operation:
+	
+		operations are the method of the class.
+	
+	multiplicity:
+
+		The multiplicity is an indication of how many objects may participate 
+		in the given relationship, or the allowable number of instances of the element.
+
+ Assoziation, n-äre Assoziation, Assoziationsklasse
+	association:
+		
+		Association defines a relationship between classes of objects that 
+		allows one object instance to cause another to perform an action on its behalf.
+		
+	n-äre association:
+
+		relation between more than 2 classes.
+
+	associationclass:
+	
+		An associationclass is a class whose attributs and operations describe the relation between two classes.
+	
+ Aggregation/Komposition
+
+ Generalisierung, Generalisierungsmengen
+
+	complete/incomplete
+	
+		In a complete generalization every instance of the superclass must 
+		also be an instance of at least one subclass.
+		
+	disjoint/overlapping
+	
+		In a overlapping generalization an object can be an instance of more than one subclass.
+ 
