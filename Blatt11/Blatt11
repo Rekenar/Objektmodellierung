@@ -1,0 +1,54 @@
+Aufgabe 1
+
+Erklären Sie in Bezug auf UML - Aktivitätsdiagramme folgende Begriffe bzw. Konzepte: 
+ Aktivität, Aktion, Tokenprinzip bzw. -verarbeitung 
+
+The activity is compromised of many actions and is the so called outer shell, where everything happens inside.
+It has actions, potential controll- and data flows.
+
+The actions are elemental blocks.
+They can process inputparameter to outputparameter.
+There are 44 pre defined  categories.
+
+A token describes a possible route an activity can take.
+They flow along the edges.
+
+
+
+ Entscheidungs- und Vereinigungsknoten, Parallelisierungs- und Synchronisierungsknoten  
+
+Decision-node defines >=2 alternative branches. Each branch needs to exclude each other. It branches dependent on the decision input.
+Union-node brings together alternative (not concurrently) processes. Can be combined with a decision-node
+
+Parallelization-nodes split processes into more process which run concurrently.
+Synchronization-nodes merge concurrently running processes together.
+
+
+
+ Ereignisse 
+
+A event is an signal that the receiver gets. 
+
+
+
+
+Erklären Sie in Bezug auf UML - Sequenzdiagramme folgende Begriffe bzw. Konzepte: 
+ Lebenslinie 
+
+Describes the timeline of an object. For example a user that operates an ATM.
+
+
+
+
+ Synchrone und asynchrone Kommunikation 
+
+Synchronous Messages have a filled arrowhead. The sender waits till it gets a reply from his call.
+
+Asynchronous Messages dont have a filled arrowhead. The sender doesnt wait for a reply(because there isnt) and starts with the next call.
+
+
+
+ Kombinierte Fragmente und Operatoren 
+
+Operator defines the combined fragment. There are 12 pre-defined operators.
+An operand defines what happens in the operator. It can consist of interactions, combined fragments and references.
