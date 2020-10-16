@@ -17,8 +17,8 @@ import main.java.views.AlgorithmView;
 
 public class Game extends Application {
 
-    public static final double WINDOWWIDTH = 1920; //TODO CHANGE THESE AT WILL
-    public static final double WINDOWHIGHT = 1080; //TODO CHANGE THESE AT WILL
+    public static final double WINDOWWIDTH = 1080; //TODO CHANGE THESE AT WILL
+    public static final double WINDOWHIGHT = 720; //TODO CHANGE THESE AT WILL
     public static DrawableObjectsComposite doc = new DrawableObjectsComposite();
 
     private OrdersView ordersView = new OrdersView();
@@ -33,7 +33,6 @@ public class Game extends Application {
     public void start(Stage stage) {
 
         //Todo: call init() of the GameLogic Singleton
-
         //Setting Up the Menu for all Scenes
         MenuBar menuBar = new MenuBar();
         Menu views = new Menu("Views");

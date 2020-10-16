@@ -15,6 +15,7 @@ import javafx.util.Callback;
 import main.java.logic.GameLogic;
 import main.java.logic.entities.Location;
 import main.java.Game;
+import main.java.logic.entities.Order;
 
 public class OrdersView implements PaneProvider {
 

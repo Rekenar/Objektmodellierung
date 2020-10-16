@@ -8,7 +8,7 @@ public class AlgorithmRegistry {
 
     private static AlgorithmRegistry algorithmRegistry;
 
-    private Map<String, Class<? extends Algorithm>> classes = new HashMap<>();
+    private Map<String, Class<? extends AlgorithmStrategy>> classes = new HashMap<>();
 
     public static AlgorithmRegistry getInstance(){
         if(algorithmRegistry == null)
@@ -17,14 +17,14 @@ public class AlgorithmRegistry {
     }
 
     private AlgorithmRegistry() {
+
     }
 
-
-    public void addAlgorithm(String name, Class algorithm){
-        classes.putIfAbsent(name,algorithm);
+    public void addAlgorithm(String name, Class AlgorithmStrategy){
+        classes.putIfAbsent(name,AlgorithmStrategy);
     }
 
-    public Algorithm getAlgorithmInstanceByName(String name){
+    public AlgorithmStrategy getAlgorithmInstanceByName(String name){
         if(classes.containsKey(name)) {
             try {
                 return classes.get(name).newInstance();
@@ -40,4 +40,12 @@ public class AlgorithmRegistry {
         retlist.addAll(classes.keySet());
         return retlist;
     }
+
+
+
+
+
+
+
+
 }

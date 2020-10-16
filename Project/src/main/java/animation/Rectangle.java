@@ -1,30 +1,30 @@
 package main.java.animation;
 
 import javafx.beans.property.DoubleProperty;
+import javafx.beans.property.SimpleDoubleProperty;
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.paint.Paint;
+import javafx.scene.paint.Color;
 
 
 public class Rectangle implements DrawableObject {
 
     private DoubleProperty x;
     private DoubleProperty y;
-    private Paint color;
     private double width;
-    private double height;
+    private double hight;
+    private Color color;
 
-    Rectangle(DoubleProperty x, DoubleProperty y, Paint color, double width, double height){
-        this.x = x;
-        this.y = y;
-        this.color = color;
+    public Rectangle(double x, double y, double width, double height, Color color){
+        this.x = new SimpleDoubleProperty(x);
+        this.y = new SimpleDoubleProperty(y);
         this.width = width;
-        this.height = height;
+        this.hight = height;
+        this.color = color;
     }
-
     @Override
     public void draw(GraphicsContext gc) {
         gc.setFill(color);
-        gc.fillRect(0, 0, width, height);
+        gc.fillRect(0, 0, width, hight);
     }
 
     @Override
@@ -35,37 +35,5 @@ public class Rectangle implements DrawableObject {
     @Override
     public DoubleProperty getYproperty() {
         return this.y;
-    }
-
-    public Paint getColor() {
-        return color;
-    }
-
-    public void setColor(Paint color) {
-        this.color = color;
-    }
-
-    public double getWidth() {
-        return width;
-    }
-
-    public void setWidth(double width) {
-        this.width = width;
-    }
-
-    public double getHeight() {
-        return height;
-    }
-
-    public void setHeight(double height) {
-        this.height = height;
-    }
-
-    public void setX(double x) {
-        this.x.set(x);
-    }
-
-    public void setY(double y) {
-        this.y.set(y);
     }
 }

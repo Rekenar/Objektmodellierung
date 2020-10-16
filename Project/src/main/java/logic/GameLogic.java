@@ -7,7 +7,9 @@ import javafx.animation.Timeline;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import main.java.logic.algorithms.AlgorithmRegistry;
+import main.java.logic.algorithms.FirstSmallQuantityAlgorithm;
 import main.java.logic.entities.*;
+import main.java.animation.Point;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,20 +20,25 @@ public class GameLogic {
     private boolean waitForSpawnLocation = false;
     private List<GameObject> gameObjectList = new ArrayList<>();
     private String selectedLocationElement;
-    private GameLogic gameLogic;
-
-    private GameLogic(String selectedLocationElement){
-        gameLogic = new GameLogic(selectedLocationElement);
-    }
-
-    public GameLogic getInstance(){
-        return this.gameLogic;
-    }
-
+    private static GameLogic instance = new GameLogic();
     public void spawnLocation(MouseEvent event) {
         //TODO Implement. Hint: event.getX() and event.getY() provide the location for the new location.
+        gameObjectList.add(new Butcher(new Point(event.getX(),event.getY()), "yx"));
+
         //Create a location, add its drawable to the Game.doc and add it the gameObjectList.
     }
+
+    //Singleton Implementation
+
+    private GameLogic(){};
+
+    public static GameLogic getGameLogic(){
+        return GameLogic.instance;
+    }
+    public static GameLogic getInstance(){
+        return GameLogic.instance;
+    }
+    //end of Singleton Implementation
 
     public void update(double delta) {
         List<GameObject> gameObjectList2 = new ArrayList<>();
@@ -44,30 +51,36 @@ public class GameLogic {
     public void init() {
 
         //Setting up the Algorithms
-        AlgorithmRegistry.getInstance().addAlgorithm(SomeAlgorithm.name, SomeAlgorithm.class); //TODO Change this to the actual Algorithms
+        Algorithm a = new FirstSmallQuantityAlgorithm();
+
+        AlgorithmRegistry.getInstance().addAlgorithm(a.getName(), FirstSmallQuantityAlgorithm.class); //TODO Change this to the actual Algorithms
 
         Rectangle bg = new Rectangle(0, 0, Game.WINDOWWIDTH, Game.WINDOWHIGHT, Color.CORNSILK);
         Game.doc.add(bg);
 
 
         //Adding GameObjects like this adds them initially.
-        Location someLocation = (Location) GameObjectFactory.getGameObject("Something", new Point(25, 25));
+        Location someLocation = (Location) GameObjectFactory.getGameObject("Farm", new Point(25, 25));
         Game.doc.add(someLocation.getDrawable());
         gameObjectList.add(someLocation);
 
-        //Example of initial Order
-        someLocation.addOrder(new Order(someLocation, someOtherLocation, "Resource", 5));
+        Location someOtherLocation = (Location) GameObjectFactory.getGameObject("Butcher",new Point(100,150));
 
+        //Example of initial Order
+
+        someLocation.addOrder(new Order(someLocation, someOtherLocation, "Wheat", 5));
 
     }
 
-
     public void spawnCarrier(Order order) {
-        //TODO Create a new carrier, add its drawable to the Game.doc, add the car to gameObjectList and set the name
 
-        Timeline timelineCarrier = AnimationHelper.getTimelineForLocation(c.getDrawable().getXproperty(), c.getDrawable().getYproperty(), order.getOriginLocation().point.x, order.getOriginLocation().point.y, order.getTargetLocation().point.x, order.getTargetLocation().point.y, 100);
+        Point pe = order.getOriginLocation().point;
+        Carrier c = new Carrier(pe);
+
+
+        Timeline timelineCarrier = AnimationHelper.getTimelineForLocation(c.getDrawable().getXproperty(), c.getDrawable().getYproperty(), order.getOriginLocation().point.getX(), order.getOriginLocation().point.getY(), order.getTargetLocation().point.getX(), order.getTargetLocation().point.getY(), 100);
         timelineCarrier.setOnFinished(event -> {
-            removeGameObject(carrierObject);
+            removeGameObject(c);
             order.onArrival();
         });
         timelineCarrier.play();

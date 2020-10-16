@@ -2,6 +2,7 @@ package main.java.logic.entities;
 
 import main.java.animation.DrawableObject;
 import javafx.scene.input.MouseEvent;
+import main.java.animation.Point;
 
 
 public abstract class GameObject {
@@ -17,7 +18,9 @@ public abstract class GameObject {
         return dob;
     }
 
-    public void update(double delta) {};
+    public void update(double delta) {
+
+    };
 
     public boolean overlaps(Point point) {
         return false;

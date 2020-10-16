@@ -3,6 +3,8 @@ package main.java.logic.entities;
 import main.java.animation.AnimationHelper;
 import main.java.animation.Circle;
 import main.java.animation.DrawableObject;
+import main.java.animation.Point;
+
 
 public class Carrier extends GameObject {
     static double DIAMETER = 15;

@@ -3,6 +3,9 @@ Aufgabe 1
 Erklären Sie in Bezug auf UML - Aktivitätsdiagramme folgende Begriffe bzw. Konzepte: 
  Aktivität, Aktion, Tokenprinzip bzw. -verarbeitung 
 
+
+
+
 The activity is compromised of many actions and is the so called outer shell, where everything happens inside.
 It has actions, potential controll- and data flows.
 
@@ -12,6 +15,7 @@ There are 44 pre defined  categories.
 
 A token describes a possible route an activity can take.
 They flow along the edges.
+
 
 
 
@@ -27,7 +31,7 @@ Synchronization-nodes merge concurrently running processes together.
 
  Ereignisse 
 
-A event is an signal that the receiver gets. 
+An event is an signal that the receiver gets. 
 
 
 

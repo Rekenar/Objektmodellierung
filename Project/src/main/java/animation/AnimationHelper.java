@@ -8,6 +8,8 @@ import javafx.scene.paint.Color;
 import javafx.util.Duration;
 
 import java.awt.geom.Point2D;
+import java.util.ArrayList;
+import java.util.Random;
 
 public class AnimationHelper {
 
@@ -25,11 +27,32 @@ public class AnimationHelper {
                 )
         );
 
+
+
         return timeline;
     }
 
+    private static Color[] myColors = createPleasantColors();
+
+    private static Color[] createPleasantColors(){
+        return new Color[]{
+                Color.color(0, 0, 1),
+                Color.color(0, 1, 0),
+                Color.color(1, 0, 0),
+                Color.color(1, 1, 0),
+                Color.color(1, 0, 1),
+                Color.color(0, 1, 1),
+                Color.color(0, 0, 0)
+        };
+    }
+
+
+
     public static Color getRandomColor() {
-        //TODO: Select only pleasant colours
-        return Color.color(Math.random(), Math.random(), Math.random());
+
+        Random r = new Random();
+        int a = r.nextInt(7);
+
+        return myColors[a];
     }
 }

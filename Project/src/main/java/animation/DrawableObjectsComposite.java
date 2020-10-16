@@ -6,38 +6,41 @@ import javafx.scene.canvas.GraphicsContext;
 import java.util.ArrayList;
 
 public class DrawableObjectsComposite implements DrawableObject {
-    private ArrayList<DrawableObject> children;
+
+	private DoubleProperty xproperty;
+	private DoubleProperty yproperty;
+	private ArrayList<DrawableObject> childDrawableObject = new ArrayList<>();
 
 
-    public void add(DrawableObject drawableObject){
-        children.add(drawableObject);
-    }
-    public void remove(DrawableObject drawableObject){
-        children.remove(drawableObject);
-    }
-    public ArrayList<DrawableObject> getChildren(DrawableObject drawableObject){
-        return children;
-    }
-    public void draw(GraphicsContext gc){
-        for(DrawableObject child:children){
-            child.draw(gc);
-        }
-    }
+	@Override
+	public void draw(GraphicsContext gc) {
+		for (DrawableObject drawableObject : childDrawableObject) {
+			drawableObject.draw(gc);
+		}
+	}
 
-    @Override
-    public DoubleProperty getXproperty() {
-        for(DrawableObject child:children){
-            child.getXproperty();
-        }
+	public ArrayList<DrawableObject> getChildrenDrawableObject(){
+		return this.childDrawableObject;
+	}
 
-    }
+	public void add(DrawableObject draw){
+		childDrawableObject.add(draw);
+	}
 
-    @Override
-    public DoubleProperty getYproperty() {
-        for(DrawableObject child:children){
-            child.getYproperty();
-        }
+	public void remove(DrawableObject draw){
+		childDrawableObject.remove(draw);
+	}
 
-    }
+	@Override
+	public DoubleProperty getXproperty() {
+		return xproperty;
+	}
+
+	@Override
+	public DoubleProperty getYproperty() {
+		return yproperty;
+	}
+
+
 
 }
